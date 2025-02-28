@@ -1,0 +1,25 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__block {
+        margin-top: 40px;
+        border-radius: 15px 0 0 15px;
+        background: rgba(39, 40, 44, 0.8);
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+
+    &__element {
+        width: clamp(40px, -0.577rem + 15.38vw, 60px); //40-60  v300-450
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+    }
+}

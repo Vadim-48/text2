@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #27282c;
+    color: #8f8f8f; 
+    font-size: 16px;
+    box-shadow: -3px -5px 8px 0 #313439, 3px 5px 8px 0 #1d1e21, inset 0 1px 8px 0 rgba(29, 30, 33, 0.2);
+    height: 60px;
+    
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__home-icon {
+    }
+
+    &__home-img {
+    }
+
+    &__water-icon {
+        margin-left: 37px;
+    }
+
+    &__water--img {
+    }
+
+    &__line{
+        width: 1px;
+        height: 60px;
+        background: #8f8f8f;
+        margin-left: 24px;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__date {
+        text-transform: uppercase;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-left: clamp(0.938rem, -7.438rem + 16.75vw, 5.125rem);  // 15-82
+        font-family: var(--second-family);
+        font-weight: 400;
+    }
+}
+
+.user {
+
+    &__name {
+    }
+
+    &__icon {
+        margin-left: 10px;
+    }
+
+    &__img {
+    }
+}
+
