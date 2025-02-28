@@ -21,6 +21,19 @@ main{
     justify-content: space-between;
 }
 
+.btn{
+    background-color: inherit;
+}
+
+a:focus-visible, button:focus-visible {
+    border: 4px solid #0ff;
+} 
+
+.btn:hover{
+    background: rgba(43, 152, 204, 0.5);
+    color: #27282c;
+}
+
 .btn__active{
     background: #29aae1;
     color: #27282c;
@@ -38,9 +51,9 @@ main{
         background: #2b98cc;
         color: #fff;
     }
-    
 }
 
-a:focus-visible, button:focus-visible {
-    border: 4px solid #0ff;
-}   
+.sd{
+    width: 20px;
+}
+

@@ -93,6 +93,19 @@ main {
   justify-content: space-between;
 }
 
+.btn {
+  background-color: inherit;
+}
+
+a:focus-visible, button:focus-visible {
+  border: 4px solid #0ff;
+}
+
+.btn:hover {
+  background: rgba(43, 152, 204, 0.5);
+  color: #27282c;
+}
+
 .btn__active {
   background: #29aae1;
   color: #27282c;
@@ -110,8 +123,8 @@ main {
   color: #fff;
 }
 
-a:focus-visible, button:focus-visible {
-  border: 4px solid #0ff;
+.sd {
+  width: 20px;
 }
 
 .header {
@@ -159,7 +172,7 @@ a:focus-visible, button:focus-visible {
 .nav {
   padding-top: 25px;
   background: rgba(39, 40, 44, 0.8);
-  width: auto;
+  width: 390px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -327,12 +340,16 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   margin-top: 8px;
 }
+.about__pump-all {
+  gap: 20px;
+}
 .about__pump {
   padding: 21px 27px;
   border-radius: 10px;
   width: clamp(280px, 8.804rem + 43.48vw, 380px);
   height: 105px;
   margin-top: 21px;
+  gap: 20px;
 }
 .about__sensors {
   margin-top: 24px;
@@ -505,6 +522,12 @@ a:focus-visible, button:focus-visible {
   border-radius: 15px;
   font-weight: 700;
 }
+.sensors__lock button:first-of-type {
+  border-radius: 0 0 0 15px;
+}
+.sensors__lock button:last-child {
+  border-radius: 0 0 15px 0;
+}
 .sensors__electric {
   padding: 6px 18px;
   border-radius: 15px;
@@ -537,6 +560,12 @@ a:focus-visible, button:focus-visible {
 .speed__bottom {
   display: flex;
 }
+.speed__bottom button:first-child {
+  border-radius: 0 0 0 15px;
+}
+.speed__bottom button:last-child {
+  border-radius: 0 0 15px 0;
+}
 .speed__section {
   width: 46px;
   height: 45px;
@@ -568,6 +597,12 @@ a:focus-visible, button:focus-visible {
 .temp__bottom {
   display: flex;
 }
+.temp__bottom button:first-child {
+  border-radius: 0 0 0 15px;
+}
+.temp__bottom button:last-child {
+  border-radius: 0 0 15px 0;
+}
 .temp__section {
   width: 69px;
   height: 45px;
@@ -598,12 +633,6 @@ a:focus-visible, button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.lock__section:first-child {
-  border-radius: 0 0 0 15px;
-}
-.lock__section:last-child {
-  border-radius: 0 0 15px 0;
 }
 
 .electrick__img {

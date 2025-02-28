@@ -38,6 +38,7 @@
     }
 
     &__pump-all {
+        gap: 20px;
     }
 
     &__pump {
@@ -46,6 +47,7 @@
         width: clamp(280px, 8.804rem + 43.48vw, 380px);// 280-380 v 320-650
         height: 105px;
         margin-top: 21px;
+        gap: 20px;
     }
 
     &__sensors {
@@ -269,6 +271,13 @@
         text-align: center;
         border-radius: 15px;
         font-weight: 700;
+
+        & button:first-of-type{
+            border-radius: 0 0 0 15px;
+        }
+        & button:last-child{
+            border-radius: 0 0 15px 0;
+        }
     }
 
     &__electric {
@@ -311,6 +320,13 @@
 
     &__bottom {
         display: flex;
+
+        & button:first-child{
+            border-radius: 0 0 0 15px;
+        }
+        & button:last-child{
+            border-radius: 0 0 15px 0;
+        }
     }
 
     &__section {
@@ -347,7 +363,15 @@
 
     &__bottom {
         display: flex;
+
+        & button:first-child{
+            border-radius: 0 0 0 15px;
+        }
+        & button:last-child{
+            border-radius: 0 0 15px 0;
+        }
     }
+
 
     &__section {
         width: 69px;
@@ -390,12 +414,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:first-child{
-            border-radius: 0 0 0 15px;
-        }
-        &:last-child{
-            border-radius: 0 0 15px 0;
-        }
     }
 }
 .electrick {
