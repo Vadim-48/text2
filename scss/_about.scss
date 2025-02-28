@@ -47,11 +47,11 @@
         width: clamp(280px, 8.804rem + 43.48vw, 380px);// 280-380 v 320-650
         height: 105px;
         margin-top: 21px;
-        gap: 20px;
     }
 
     &__sensors {
         margin-top: 24px;
+        gap: 20px;
     }
 
     &__front {
@@ -273,10 +273,10 @@
         font-weight: 700;
 
         & button:first-of-type{
-            border-radius: 0 0 0 15px;
+            border-bottom-left-radius: 15px;
         }
         & button:last-child{
-            border-radius: 0 0 15px 0;
+            border-bottom-right-radius: 15px;
         }
     }
 
@@ -322,10 +322,10 @@
         display: flex;
 
         & button:first-child{
-            border-radius: 0 0 0 15px;
+            border-bottom-left-radius: 15px;
         }
         & button:last-child{
-            border-radius: 0 0 15px 0;
+            border-bottom-right-radius: 15px;
         }
     }
 
@@ -365,10 +365,10 @@
         display: flex;
 
         & button:first-child{
-            border-radius: 0 0 0 15px;
+            border-bottom-left-radius: 15px;
         }
         & button:last-child{
-            border-radius: 0 0 15px 0;
+            border-bottom-right-radius: 15px;
         }
     }
 
