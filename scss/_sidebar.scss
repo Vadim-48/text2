@@ -10,6 +10,13 @@
         &:first-child{
             margin-top: 0;
         }
+
+        & button:first-child{
+            border-top-left-radius: 15px;
+        }
+        & button:last-child{
+            border-bottom-left-radius: 15px;
+        }
     }
 
     &__element {
