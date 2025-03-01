@@ -813,7 +813,7 @@ a:focus-visible, button:focus-visible {
     display: none;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 400px) {
   .speed__section {
     width: 40px;
   }
