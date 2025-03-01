@@ -559,6 +559,7 @@ a:focus-visible, button:focus-visible {
 }
 .speed__bottom {
   display: flex;
+  width: inherit;
 }
 .speed__bottom button:first-child {
   border-bottom-left-radius: 15px;
@@ -567,7 +568,7 @@ a:focus-visible, button:focus-visible {
   border-bottom-right-radius: 15px;
 }
 .speed__section {
-  width: 46px;
+  width: 33.33%;
   height: 45px;
   box-shadow: inset 0 5px 6px 0 #202020;
   display: flex;
@@ -596,6 +597,7 @@ a:focus-visible, button:focus-visible {
 }
 .temp__bottom {
   display: flex;
+  width: inherit;
 }
 .temp__bottom button:first-child {
   border-bottom-left-radius: 15px;
@@ -604,7 +606,7 @@ a:focus-visible, button:focus-visible {
   border-bottom-right-radius: 15px;
 }
 .temp__section {
-  width: 69px;
+  width: 50%;
   height: 45px;
   box-shadow: inset 0 5px 6px 0 #202020;
   display: flex;
@@ -811,13 +813,5 @@ a:focus-visible, button:focus-visible {
   }
   .about__footer {
     display: none;
-  }
-}
-@media (max-width: 440px) {
-  .speed__section {
-    width: 40px;
-  }
-  .temp__section {
-    width: 60px;
   }
 }
