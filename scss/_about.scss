@@ -247,7 +247,7 @@
 .sensors {
 
     &__block {
-        padding: 20px 20px 0 20px;
+        padding-top: 20px;
         border-radius: 15px;
         width: clamp(120px, 4.731rem + 13.85vw, 138px); //120-138  v 320-450
         height: 240px;

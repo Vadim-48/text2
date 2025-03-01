@@ -8,11 +8,11 @@
     .about__sensors{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        gap: clamp(20px, -0.417rem + 4.17vw, 60px); //20-60 640-1600
     }
 
 }
-
+ 
 @media (max-width: 1440px){
     .main{
         flex-direction: column;
@@ -23,6 +23,7 @@
     }
     .sidebar{
         flex-direction: row;
+
         &__block{
             display: flex;
             border-radius: 15px 15px 0 0;
@@ -43,7 +44,6 @@
     }
 
     .nav__bottom{
-        height: 55px;
         margin-top: 10px;
         margin-left:auto;
     }
@@ -63,10 +63,6 @@
     }
 }
 @media (max-width: 640px){
-    .about__sensors{
-        gap: 20px;
-    }
-
     .header{
         flex-direction: column;
         height: auto;
@@ -103,9 +99,17 @@
     .about__footer {
         display: none;
     }
+}
 
-    .menu-item__btn {
-        width: 240px;
+@media (max-width: 640px){
+    .speed__section{
+        width: 40px;
+    }
+    .temp__section{
+        width: 60px;
     }
 }
+
+
+
 

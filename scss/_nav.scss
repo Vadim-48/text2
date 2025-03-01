@@ -43,7 +43,7 @@
     &__bottom {
         background: #27282c;
         width: clamp(300px, 4.904rem + 69.23vw, 390px);//300-390,  v 320-450
-        height: 86px;
+        height: clamp(55px, -14rem + 19.38vw, 86px); //55-86  v1440-1600
         padding: 11px 0 0 21px;
         font-weight: 400;
         font-size: 16px;
@@ -86,7 +86,7 @@
 
     &__btn {
         border-radius: 0 15px 15px 0;
-        width: 260px;
+        width: clamp(240px, 10.536rem + 14.29vw, 260px);  //240-260  500-640
         height: 50px;
         background: #27282c;
         display: flex;
