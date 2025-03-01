@@ -203,7 +203,7 @@ a:focus-visible, button:focus-visible {
 .nav__bottom {
   background: #27282c;
   width: clamp(300px, 4.904rem + 69.23vw, 390px);
-  height: 86px;
+  height: clamp(55px, -14rem + 19.38vw, 86px);
   padding: 11px 0 0 21px;
   font-weight: 400;
   font-size: 16px;
@@ -246,7 +246,7 @@ a:focus-visible, button:focus-visible {
 }
 .menu-item__btn {
   border-radius: 0 15px 15px 0;
-  width: 260px;
+  width: clamp(240px, 10.536rem + 14.29vw, 260px);
   height: 50px;
   background: #27282c;
   display: flex;
@@ -499,7 +499,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .sensors__block {
-  padding: 20px 20px 0 20px;
+  padding-top: 20px;
   border-radius: 15px;
   width: clamp(120px, 4.731rem + 13.85vw, 138px);
   height: 240px;
@@ -730,7 +730,7 @@ a:focus-visible, button:focus-visible {
   .about__sensors {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
+    gap: clamp(20px, -0.417rem + 4.17vw, 60px);
   }
 }
 @media (max-width: 1440px) {
@@ -762,7 +762,6 @@ a:focus-visible, button:focus-visible {
     align-items: center;
   }
   .nav__bottom {
-    height: 55px;
     margin-top: 10px;
     margin-left: auto;
   }
@@ -780,9 +779,6 @@ a:focus-visible, button:focus-visible {
   }
 }
 @media (max-width: 640px) {
-  .about__sensors {
-    gap: 20px;
-  }
   .header {
     flex-direction: column;
     height: auto;
@@ -816,7 +812,12 @@ a:focus-visible, button:focus-visible {
   .about__footer {
     display: none;
   }
-  .menu-item__btn {
-    width: 240px;
+}
+@media (max-width: 640px) {
+  .speed__section {
+    width: 40px;
+  }
+  .temp__section {
+    width: 60px;
   }
 }
